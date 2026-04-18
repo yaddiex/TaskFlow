@@ -1,0 +1,23 @@
+﻿@model TaskFlow.Models.Usuario
+
+<h2>Registro de Usuario</h2>
+
+<form asp-controller="Usuarios" asp-action="Create" method="post">
+
+    <div>
+        <label>Nombre</label>
+        <input asp-for="Nombre" />
+    </div>
+
+    <div>
+        <label>Correo</label>
+        <input asp-for="Correo" />
+    </div>
+
+    <div>
+        <label>Contraseña</label>
+        <input asp-for="Contrasena" type="password" />
+    </div>
+
+    <button type="submit">Guardar</button>
+</form>>
